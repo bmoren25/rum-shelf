@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yardy Rum Bar</title>
+  <title>Yardy Rum Bar | Interactive Rum Shelf</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,15 +13,28 @@
   </header>
 
   <main>
-    <section class="hero">
-      <p>Click the shelf image to reveal rum info.</p>
-      <img src="shelf.jpeg" alt="Rum shelf" id="shelf-image" />
-      <button id="show-btn">Show Rum Info</button>
+    <section class="intro">
+      <h2>Explore the Shelf</h2>
+      <p>Click a bottle to see tasting notes, producer, and aging details.</p>
     </section>
 
-    <section id="rum-info" class="hidden">
-      <h2>Rum Notes</h2>
-      <p id="rum-text">Rum details will appear here.</p>
+    <section class="shelf-section">
+      <div class="shelf-container">
+        <img src="shelf.jpeg" alt="Rum shelf" class="shelf-image" />
+
+        <!-- Clickable bottle spots -->
+        <button class="bottle bottle1" onclick="showRum('appleton12')"></button>
+        <button class="bottle bottle2" onclick="showRum('wray')"></button>
+        <button class="bottle bottle3" onclick="showRum('plantation')"></button>
+      </div>
+    </section>
+
+    <section class="info-panel" id="info-panel">
+      <h2 id="rum-name">Select a rum</h2>
+      <p><strong>Age:</strong> <span id="rum-age">--</span></p>
+      <p><strong>Tasting Notes:</strong> <span id="rum-notes">--</span></p>
+      <p><strong>Style:</strong> <span id="rum-style">--</span></p>
+      <p><strong>Producer:</strong> <span id="rum-producer">--</span></p>
     </section>
   </main>
 
