@@ -19,14 +19,38 @@
     </section>
 
     <section class="shelf-section">
-      <div class="shelf-container">
-        <img src="shelf.jpeg" alt="Rum shelf" class="shelf-image" />
+      <img
+        src="shelf.jpeg"
+        alt="Rum shelf"
+        class="shelf-image"
+        usemap="#rumshelf"
+      />
 
-        <!-- Example clickable bottle links -->
-        <a href="appleton12.html" class="hotspot appleton12" aria-label="Appleton Estate 12 Year"></a>
-        <a href="wraynephew.html" class="hotspot wraynephew" aria-label="Wray and Nephew"></a>
-        <a href="rumfire.html" class="hotspot rumfire" aria-label="Rum Fire"></a>
-      </div>
+      <map name="rumshelf">
+        <!-- Appleton 12 top shelf -->
+        <area
+          shape="rect"
+          coords="680,40,740,180"
+          href="appleton12.html"
+          alt="Appleton Estate 12 Year"
+        />
+
+        <!-- Wray & Nephew middle shelf -->
+        <area
+          shape="rect"
+          coords="865,255,915,380"
+          href="wraynephew.html"
+          alt="Wray and Nephew"
+        />
+
+        <!-- Rum Fire middle shelf -->
+        <area
+          shape="rect"
+          coords="920,255,970,380"
+          href="rumfire.html"
+          alt="Rum Fire"
+        />
+      </map>
     </section>
   </main>
 </body>
