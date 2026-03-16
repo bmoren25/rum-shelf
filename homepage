@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            Yardy Rum Bar
+        </h2>
+        <p>
+            Click below
+        </p>
+        <a href="default.asp"><img src="shelf.jpeg" alt="Rum shelf"
+        style="width:42px;height:42px;"></a>
+    </body>
+</html>
